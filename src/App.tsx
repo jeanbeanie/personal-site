@@ -27,7 +27,12 @@ const StyledSubTitle = styled.h2`
   margin-top: 14px;
   font-variant: petite-caps;
   font-weight: 300;
-}
+  &#copyright {
+    opacity: .5;
+    width: 100%;
+    margin: 2rem 0;
+    text-align: center;
+  }
 `;
 
 const StyledPage = styled.div`
@@ -103,7 +108,7 @@ const StyledAvatar = styled.div`
   height: 150px;
   width: 150px;
   border-radius: 50%;
-  margin: 40px 0 0 0;
+  margin: 40px 0 0 2rem;
   background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTmY6v-1ADIkVtKd_RvDjcyCCGW6MG9YAXG0g&usqp=CAU)
 `;
 
@@ -170,6 +175,8 @@ function App() {
                 </p>
               </StyledColumn>
           </div>
+            <StyledHeaderRule/>
+              <StyledSubTitle id="copyright">©2020 All Rights Reserved</StyledSubTitle>
       </StyledPage>
     </div>
   );
