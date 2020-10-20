@@ -10,6 +10,8 @@ import {
 import {Header, StyledSubTitle, StyledHeaderRule} from './components/Header';
 import PageBody from './components/PageBody';
 import Home from './components/pages/Home';
+import Contact from './components/pages/Contact';
+import Projects from './components/pages/Projects';
 
 // TODO improve these styled component names haha
 // move colors and sizes to a utility file
@@ -63,17 +65,22 @@ function App() {
             <StyledColumn id="left">
               <StyledSideNav>
                 <Link to="/"><li>Ramblings</li></Link>
-                <a href="/"><li>Projects</li></a>
-                <a href="/"><li>Resume</li></a>
-                <a href="/"><li>Contact Me</li></a>
+                <Link to="/projects"><li>Projects</li></Link>
+                <Link to="/contact"><li>Contact Me</li></Link>
               </StyledSideNav>
             </StyledColumn>
               <StyledColumn id="right">
                 <Switch>
+                  <Route path="/projects">
+                    <PageBody content={<Projects/>} />
+                  </Route>
+                  <Route path="/contact">
+                    <PageBody content={<Contact/>} />
+                  </Route>
                   <Route path="/">
                     <PageBody content={<Home/>} />
                   </Route>
-                  </Switch>
+                </Switch>
             </StyledColumn>
           </div>
           <StyledHeaderRule/>

@@ -90,7 +90,7 @@ export function Header() {
           <StyledSocialLinks>
               <a
                 className="App-link"
-                href="https://reactjs.org"
+                href="https://twitter.com/onlyjeanbean"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -98,7 +98,7 @@ export function Header() {
               </a>
               <a
                 className="App-link"
-                href="https://reactjs.org"
+                href="https://github.com/jeanbeanie"
                 target="_blank"
                 rel="noopener noreferrer"
               >
