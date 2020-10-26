@@ -44,7 +44,6 @@ const StyledPage = styled.div`
 
 const StyledColumn = styled.div`
   float: left;
-  min-height: 100vh;
   padding: 1rem 0 0 1rem;
   &#left{
     width: 22%;
@@ -64,7 +63,6 @@ function App() {
           <div>
             <StyledColumn id="left">
               <StyledSideNav>
-                <Link to="/"><li>Ramblings</li></Link>
                 <Link to="/projects"><li>Projects</li></Link>
                 <Link to="/contact"><li>Contact Me</li></Link>
               </StyledSideNav>
