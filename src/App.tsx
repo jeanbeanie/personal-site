@@ -69,14 +69,14 @@ function App() {
             </StyledColumn>
               <StyledColumn id="right">
                 <Switch>
-                  <Route path="/projects">
-                    <PageBody content={<Projects/>} />
-                  </Route>
                   <Route path="/contact">
                     <PageBody content={<Contact/>} />
                   </Route>
+                  <Route path="/projects">
+                    <PageBody content={<Projects/>} />
+                  </Route>
                   <Route path="/">
-                    <PageBody content={<Home/>} />
+                    <PageBody content={<Projects/>} />
                   </Route>
                 </Switch>
             </StyledColumn>
